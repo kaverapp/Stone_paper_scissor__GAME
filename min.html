@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        }
+        section{
+            height: 400px;
+            width: 500px;
+            border: 5px solid salmon;
+            overflow: hidden;
+            margin: 140px 140px 140px;
+            padding: 20px;
+        }
+        .main{
+            display: flex;
+            height: 100px;
+            width: 500px;
+            background-color: rgb(209, 205, 199);
+            align-content: center;
+            justify-content:space-evenly;
+            gap: 50px;
+            box-shadow: tomato;
+        }
+        .choice{
+            background-color: rgb(139, 133, 133);
+            border-radius: 30px;
+            height: 80px;
+            width: 130px;
+            color: rgb(52, 110, 112);
+            font-size: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .mesC{
+            height: 30px;
+            width: 200px;
+            background-color: rebeccapurple;
+            font-size: 50px;
+            color: rgb(24, 20, 20);
+        }
+    </style>
+</head>
+<body>
+   <section>
+    <div class="main">
+        <div id="rock" class="choice"><code>rock</code></div>
+        <div id="paper" class="choice"><code>paper</code></div>
+        <div id="scissor" class="choice"><code>scissor</code></div>
+    </div>
+    <div>
+    <h1>Scores</h1>
+    <h2 class="cScore">0</h2>
+    <h2 class="uScore">0</h2>
+    </div>
+    <div class="mesC">
+    <div class="color"></div>
+    <div class="message">start</div>
+    </div>
+   </section>
+    <script src="index.js"></script>
+</body>
+</html>
